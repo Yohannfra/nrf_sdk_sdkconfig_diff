@@ -16,6 +16,8 @@ This script will only print the differences, all the similar defines will be ign
 $ USAGE: ./compare_sdkconfig.py sdk_config1 sdk_config2 [...]
 ```
 
+# Examples
+
 With 2 files:
 
 ```
@@ -50,8 +52,6 @@ $ ./compare_sdkconfig.py examples/sdk_config_1.h examples/sdk_config_2.h example
 ```
 
 **None** is for when a define doesn't exists in the file.
-
-Examples
 
 # License
 
