@@ -30,7 +30,7 @@ def get_define_key_val(line: str) -> Tuple[str, str]:
 
     return (define_key, define_val)
 
-def get_define_val(define_list: List[str], to_find: str):
+def get_define_val(define_list: List[str], to_find: str) -> str:
     for d in define_list:
         (define_key, define_val) = get_define_key_val(d)
 
@@ -41,7 +41,7 @@ def get_define_val(define_list: List[str], to_find: str):
 def wrap(s: str) -> str:
     return "\n".join(textwrap.wrap(s, width=15))
 
-def main(argc, argv):
+def main(argc: int, argv: List[str]):
     if argc < 3:
         sys.exit(f"USAGE: {argv[0]} sdk_config1 sdk_config2 ...")
 
