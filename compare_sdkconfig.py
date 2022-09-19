@@ -8,9 +8,8 @@ import textwrap
 
 def get_all_defines(fp: str) -> List[str]:
     with open(fp, 'r') as f:
-        fc = f.readlines()
-        all_defines = []
-        for l in fc:
+        all_defines: List[str] = []
+        for l in f.readlines():
             if re.match(r"#[ \t]{0,}define", l):
                 all_defines.append(l.strip().replace("#    define", "#define"))
         return all_defines
@@ -41,7 +40,7 @@ def get_define_val(define_list: List[str], to_find: str) -> str:
 def wrap(s: str) -> str:
     return "\n".join(textwrap.wrap(s, width=15))
 
-def main(argc: int, argv: List[str]):
+def main(argc: int, argv: List[str]) -> None:
     if argc < 3:
         sys.exit(f"USAGE: {argv[0]} sdk_config1 sdk_config2 ...")
 
