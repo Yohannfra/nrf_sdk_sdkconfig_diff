@@ -16,6 +16,10 @@ This script will only print the differences, all the similar defines will be ign
 $ USAGE: ./compare_sdkconfig.py sdk_config1 sdk_config2 [...]
 ```
 
+## For git bash users
+
+Refer to [this issue](https://github.com/Yohannfra/nrf_sdk_sdkconfig_diff/issues/1) if you have encoding errors
+
 # Examples
 
 With 2 files:
