@@ -7,7 +7,7 @@ from tabulate import tabulate
 import textwrap
 
 def get_all_defines(fp: str) -> List[str]:
-    with open(fp, 'r') as f:
+    with open(fp, 'r', encoding="utf-8") as f:
         all_defines: List[str] = []
         for l in f.readlines():
             if re.match(r"#[ \t]{0,}define", l):
