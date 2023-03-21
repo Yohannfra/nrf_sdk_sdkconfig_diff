@@ -4,11 +4,10 @@ This is a script I made to compare **sdk_config.h** files in the [NRF5 SDK](http
 
 This script will only print the differences, all the similar defines will be ignored.
 
-# Install
+# Installation
 
 1. Clone this repository
-2. **pip install -r requirements.txt**
-3. run the script
+2. ```pip install -r requirements.txt```
 
 # Usage
 
